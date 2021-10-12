@@ -73,7 +73,11 @@ const App = () => {
                   todoArray={todoArray}
                   key={index}
                 />}
-                })}
+                else{
+                  return null
+                }
+                })
+            }
           </TodoList>
           ) :           
           (pestañaActual === "Pendientes") ? (
@@ -89,6 +93,9 @@ const App = () => {
                   todoArray={todoArray}
                   key={index}
                 />}
+                else{
+                  return null
+                }
                 })}
           </TodoList>
           ) :           
@@ -105,6 +112,9 @@ const App = () => {
                    todoArray={todoArray}
                    key={index}
                  />}
+                 else{
+                  return null 
+                }
                  })}
            </TodoList>
            ) : 
@@ -121,6 +131,9 @@ const App = () => {
                   todoArray={todoArray}
                   key={index}
                 />}
+                else{
+                  return null 
+                }
                 })}
           </TodoList>
           ) :
